@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			li span {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" id="silly" />
+		<h2 id="subtitle"></h2>
+		<h1>Grocery List</h1>
+		<div>
+			<label for="item">Item: </label>
+			<input type="text" placeholder="Grocery" id="item" />
+		</div>
+
+		<div>
+			<label for="important">Is it important? </label>
+			<input type="checkbox" id="important" />
+		</div>
+
+		<div>
+			<button id="create-item">Submit</button>
+			<p class="error"></p>
+		</div>
+		<ul id="list"></ul>
+		<script src="./main.js"></script>
+	</body>
+</html>

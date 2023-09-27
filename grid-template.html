@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.grid {
+				min-width: 100vw;
+				min-height: 100vh;
+				display: grid;
+				grid-template-areas:
+					"header header header right"
+					"controls game game right"
+					"controls game game right"
+					"controls game game right"
+					"controls footer footer footer";
+			}
+
+			header {
+				grid-area: header;
+				background: red;
+			}
+
+			.controls {
+				grid-area: controls;
+				background-color: blue;
+			}
+
+			footer {
+				grid-area: footer;
+				background-color: yellow;
+			}
+
+			.other {
+				grid-area: right;
+				background-color: brown;
+			}
+			.board {
+				grid-area: game;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<header></header>
+			<div class="controls"></div>
+
+			<div class="board"></div>
+			<div class="other"></div>
+			<footer></footer>
+		</div>
+	</body>
+</html>

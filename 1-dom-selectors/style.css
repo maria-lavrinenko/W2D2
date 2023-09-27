@@ -1,0 +1,33 @@
+/* .spin {
+	animation: spin 2s infinite linear;
+} */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+@keyframes spin {
+	to {
+		rotate: 359deg;
+	}
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+.circle {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 2px black solid;
+	display: grid;
+	place-items: center;
+}
